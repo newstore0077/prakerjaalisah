@@ -357,6 +357,40 @@ section .title::after{
     width: 70%;
 }
 
+/* contact section styling */
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: rgb(16, 91, 230);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
 
 
 /* responsive media */
@@ -458,6 +492,10 @@ section .title::after{
     .profile .profile-content .card{
         width: 100%;
     }
+    .contact .contact-content{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -470,6 +508,10 @@ section .title::after{
     .about .about-content .right .text,
     .portofolio .portofolio-content .left .text{
         font-size: 19px;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
     }
     .scroll-up-btn{
         right: 15px;
